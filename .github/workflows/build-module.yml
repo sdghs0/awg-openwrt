@@ -12,16 +12,16 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "22.03.4"
-            pkgarch: mips_24kc
-            target: ath79
-            subtarget: nand
-            vermagic: "5c9be91b90bda5403fe3a7c4e8ddb26f"
-          - tag: "23.05.0"
-            pkgarch: mipsel_24kc
-            target: ramips
-            subtarget: mt7621
-            vermagic: "9c242f353867f49a96054ff8c9f2c460"
+          - tag: "23.05.3"
+            pkgarch: aarch64_cortex-a72
+            target: bcm27xx
+            subtarget: bcm2711
+            vermagic: "bd9c06a169c49b7613087c1d65b97108"
+          - tag: "23.05.3"
+            pkgarch: arm_cortex-a7_neon-vfpv4
+            target: sunxi
+            subtarget: cortexa7
+            vermagic: "89abffae0b6474baac1b355bd503ce19"
           - tag: "23.05.2"
             pkgarch: mipsel_24kc
             target: ramips
